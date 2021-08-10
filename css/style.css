@@ -1,0 +1,348 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*---Wrapper---*/
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 60px;
+    max-width: 1250px;
+}
+
+
+/*--- Header ---*/
+
+header {
+    margin: 0 auto;
+    padding: 0 60px;
+}
+.header-nav {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header-logo {
+    font-family: 'Inconsolata', monospace;
+    
+}
+.header-logo p {
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+.nav {
+    display: flex;
+
+    font-family: 'Playfair Display SC', serif;
+    
+}
+.animation {
+    padding: 1px 3px 1px 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #626262;
+    border-radius: 2px;
+    opacity: .5;
+}
+.animation:hover {
+    padding: 1px 3px 1px 5px;
+    padding-bottom: 3px;
+    border: 1px solid #626262;
+    border-radius: 2px;
+    opacity: 1;
+    color: rgb(54, 54, 54);
+    transition: .3s linear;
+    
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+
+}
+.nav li {
+    padding-left: 120px;
+    
+}
+
+.nav a {
+    
+    font-weight: 700;
+    text-decoration: none;
+    color: #626262;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.icon {
+   display: none;
+
+}
+@media screen and (max-width: 1120px) {
+    .nav li {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav li {
+        padding-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .nav li {
+        display: none;
+    }
+    .nav > .icon {
+        display: block;
+        font-size: 24px;
+    
+    }
+    .topnav {
+        width: 100%;
+    }
+    
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    .header-nav .topnav.responsive {
+        height: 340px;
+    }
+    .nav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.bg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;   
+}
+
+/*---Header---*/
+
+
+
+/*---Section--*/
+.section-header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.section-header .title {
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+h1 {
+    padding-top: 40px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #626262;
+}
+.subtitle {
+    padding: 40px 0 55px;
+    line-height: 24px;
+    color: #626262;
+}
+.title-2 {
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+
+
+.section-main {
+    display: flex;
+    justify-content: space-between;
+}
+.main-bottom {
+    margin-left: 100px;
+}
+
+.title {
+    padding: 25px 0 0 ;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+.main-h1 {
+    padding: 10px 0 0;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #626262;
+}
+
+   
+
+.main-img {
+    margin-top: 150px ;
+    box-shadow: 0 1px 5px 0 rgb(180, 180, 180 );
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    
+}
+.main-img:hover {
+    transform: scale(1.01, 1.01);
+    margin-top: 150px ;
+    box-shadow: 0 4px 8px 0 rgb(180, 180, 180);
+    transition: all .2s linear;
+    border: 1px solid rgb(183, 182, 184);
+}
+
+
+.section-down-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--- container ---*/
+
+.container {
+    margin-top: 120px;
+    width: 100%;
+    min-height: 350px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.top-text {
+    margin-bottom: 50px;
+}
+
+.email {
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.email-text {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #626262;
+}
+.email-input {
+    padding: 2px 5px 0 ;
+    border: none;
+    background-color: #f0f0f0;
+    outline: none;
+}
+button {
+    margin-right: 30px;
+}
+.svg {
+    fill: black;
+}
+.svg:hover {
+    fill: rgb(183, 182, 184);
+}
+
+
+
+.btn {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.button-link {
+    padding: 15px 25px;
+    background-color: #fff;
+    border: 1px solid #626262;
+}
+.button-link:hover {
+    padding: 15px 25px;
+
+    color: rgb(44, 44, 44);
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #242424;
+    border-radius: 5px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+
+.load {
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    color: #626262;
+}
+
+
+/*--- Section ---///*/
+
+footer {
+    padding-top: 25px;
+    margin-top: 120px;
+    min-height: 50px;
+    background-color: #f0f0f0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-follow {
+    margin-left: 15px;
+    fill: rgb(134, 134, 134);
+}
+
+.footer-follow:hover {
+    fill: rgb(0, 0, 0);
+    transition: all .2s linear;
+}
+.right-side p {
+    font-weight: 700;
+    text-transform: uppercase;
+}
