@@ -7,7 +7,7 @@ body {
 }
 
 
-* {
+*, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -51,7 +51,7 @@ header {
     
 }
 .animation {
-    padding: 1px 3px 1px 5px;
+    padding: 3px 3px 1px 5px;
     padding-bottom: 3px;
     border-bottom: 1px solid #626262;
     border-radius: 2px;
@@ -82,7 +82,7 @@ header {
     font-weight: 700;
     text-decoration: none;
     color: #626262;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
@@ -90,28 +90,8 @@ header {
    display: none;
 
 }
-@media screen and (max-width: 1120px) {
-    .nav li {
-        padding-left: 80px;
-    }
-}
 
-@media screen and (max-width: 950px) {
-    .nav li {
-        padding-left: 40px;
-    }
-
-}
-
-@media screen and (max-width: 800px) {
-    .nav li {
-        display: none;
-    }
-    .nav > .icon {
-        display: block;
-        font-size: 24px;
     
-    }
     .topnav {
         width: 100%;
     }
@@ -134,7 +114,7 @@ header {
         display: block;
         text-align: left;
     }
-}
+
 
 .bg {
     width: 100%;
@@ -146,6 +126,56 @@ header {
 img {
     width: 100%;   
 }
+
+.ulsubmenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2%;
+    right: 0;
+    margin: 5px 0;
+    
+}
+.nav > ul > li:hover .animation {
+    padding: 3px 3px 3px 5px;
+    border: 1px solid #626262;
+    border-radius: 2px;
+    opacity: 1;
+    color: rgb(54, 54, 54);
+    transition: .3s linear;
+}
+
+.nav > ul > li:hover .submenu {
+    display: block;
+    
+}
+.submenu {
+    display: none;
+}
+
+
+.topnav > li {
+    position: relative;
+}
+.submenu > a {
+    padding: 1px 0;
+    display: block;
+    opacity: .8;
+    font-weight: 500;
+    transition: all .4s linear;
+}
+
+.submenu > a:hover {
+    
+    border-bottom: 1px solid #000000;
+    opacity: 1;
+    color: rgb(54, 54, 54);
+    transition: .3s linear;
+    font-weight: 500;
+}
+
+
+
 
 /*---Header---*/
 
@@ -214,6 +244,7 @@ h1 {
     border-radius: 3px;
     
 }
+
 .main-img:hover {
     transform: scale(1.01, 1.01);
     margin-top: 150px ;
@@ -240,6 +271,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+
 .top-text {
     margin-bottom: 50px;
 }
@@ -346,3 +378,94 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+
+
+
+/*---- Media queris ---*/
+@media screen and (max-width: 1010px) {
+    .main-img {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .container {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1290px) {
+    .nav li {
+        padding-left: 110px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .nav li {
+        padding-left: 100px;
+    }
+}
+@media screen and (max-width: 1210px) {
+    .nav li {
+        padding-left: 90px;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .nav li {
+        padding-left: 80px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .nav li {
+        padding-left: 70px;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .nav li {
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .nav li {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .nav li {
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .nav li {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .nav li {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav li {
+        display: none;
+    }
+    .nav > .icon {
+        display: block;
+        font-size: 24px;
+    
+    }
+}
+@media screen and (max-width: 750px) {
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .main-bottom {
+        margin-left: 30px;
+    }
+}
+    
+
